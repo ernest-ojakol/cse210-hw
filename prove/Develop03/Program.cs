@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         //Added user input
-        Console.WriteLine("We want to know your favorite Scripture and help you memorize it.\n");
+        Console.WriteLine("\nWe want to know your favorite Scripture and help you memorize it.\n\n");
         Console.WriteLine("In which Book is your favorite scripture?");
         string book=Console.ReadLine();
         Console.WriteLine("Chapter");
@@ -31,7 +31,7 @@ class Program
         
         while(decision!="quit"){
             Console.Clear();
-            Console.WriteLine(scripture.GetDisplayText());
+            Console.WriteLine(scripture.GetDisplayText()+"\n");
             
             Console.WriteLine("Press enter to continue or type 'quit' to finish");
             decision=Console.ReadLine();
