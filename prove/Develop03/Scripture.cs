@@ -20,6 +20,7 @@ public class Scripture{
         string reference=_reference.GetDisplayText();
         string scriptureText="";
 
+        //to exceed requirements, this adds the specific number of underscores for each word.
         foreach(Word word in _words){
             if(word.isHidden()){
                 string replacement="";

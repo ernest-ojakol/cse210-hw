@@ -4,24 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Added user input
-        Console.WriteLine("\nWe want to know your favorite Scripture and help you memorize it.\n\n");
-        Console.WriteLine("In which Book is your favorite scripture?");
-        string book=Console.ReadLine();
-        Console.WriteLine("Chapter");
-        string chapter=Console.ReadLine();
-        Console.WriteLine("First Verse");
-        string fVerse=Console.ReadLine();
-        Console.WriteLine("Last Verse.(Enter '0' if there is only one verse)");
-        string lVerse=Console.ReadLine();
-        Console.Clear();
+        string book="John";
+        int chapter=3;
+        int fVerse=16;
+        int lVerse=0;
 
-        Console.WriteLine($"{book} {chapter} {fVerse} {lVerse}");
-        Console.WriteLine("Enter the scripture text");
-        string scriptureText=Console.ReadLine();
-        Console.Clear();
+        string scriptureText="For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.";
         
-        Reference reference=new Reference(book,int.Parse(chapter),int.Parse(fVerse),int.Parse(lVerse));
+        Reference reference=new Reference(book,chapter,fVerse,lVerse);
         Scripture scripture=new Scripture(reference,scriptureText);
         
         Console.Clear();
