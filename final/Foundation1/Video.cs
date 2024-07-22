@@ -28,4 +28,8 @@ public class Video{
         return _length;
     }
 
+    public int GetCommentNumber(){
+        return _comments.Count();
+    }
+
 }

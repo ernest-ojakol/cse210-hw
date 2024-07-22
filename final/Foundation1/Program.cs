@@ -21,10 +21,10 @@ class Program
 
         foreach(Video video in videos){
             Console.WriteLine($"Author: {video.GetAuthor()} | Title: {video.GetTitle()} | Length: {video.GetLength()} Seconds");
-            Console.WriteLine("Comments:");
-            foreach(Comment comment in video.GetComments()){
-                Console.WriteLine($"\tName:{comment.GetName()} | Comment:{comment.GetComment()}");
-            }
+            Console.WriteLine($"Comments:{video.GetCommentNumber()}");
+            // foreach(Comment comment in video.GetComments()){
+            //     Console.WriteLine($"\tName:{comment.GetName()} | Comment:{comment.GetComment()}");
+            // }
         }
 
 
